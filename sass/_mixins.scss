@@ -1,0 +1,21 @@
+// media queries
+
+@mixin bp($point) {
+  @if $point == large {
+    @media (min-width: 1380px) {
+      @content;
+    }
+  } @else if $point == medium {
+    @media (max-width: 1379px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == small {
+    @media (max-width: 1023px) {
+      @content;
+    }
+  }
+}

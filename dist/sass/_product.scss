@@ -1,0 +1,130 @@
+& {
+  font-weight: 300;
+  max-width: 84.5rem;
+  margin: 0 auto;
+}
+
+.product__text {
+  padding: 0 1rem;
+}
+
+.product__specs {
+  padding: 0 1rem;
+  .product__header {
+    margin-bottom: 1.88rem;
+  }
+}
+
+.product__header {
+  font-size: 3.13rem;
+  line-height: 3.75rem;
+  margin-bottom: 1.25rem;
+}
+.product__desc {
+  margin-bottom: 2.5rem;
+}
+
+.product__table {
+  font-weight: 300;
+}
+
+.product__table-row {
+  display: grid;
+}
+
+.bottom-disclaimer {
+  margin-top: 0.63rem;
+  text-align: right;
+  display: block;
+}
+
+.product__table-row {
+  padding: 1.25rem 0;
+  &:not(:last-of-type) {
+    border-bottom: 1px solid rgba($color: $color-4, $alpha: 0.3);
+  }
+}
+
+@include bp(desktop) {
+  & {
+    font-size: 1.25rem;
+    line-height: 1.88rem;
+    margin-bottom: 7.8125rem;
+  }
+  .product__specs {
+    margin-bottom: 3.13rem;
+  }
+  .product__img {
+    margin: 5.63rem auto;
+  }
+  .small-img {
+    margin-top: 0;
+    margin-bottom: 3.44rem;
+  }
+
+  .product__header {
+    font-size: 3.13rem;
+    line-height: 3.75rem;
+    margin-bottom: 1.25rem;
+  }
+  .product__desc {
+    margin-bottom: 2.5rem;
+  }
+
+  .product__table-row {
+    grid-template-columns: 17.81rem auto;
+    column-gap: 3.13rem;
+  }
+  .section.product__io {
+    .product__header {
+      margin-bottom: 4.38rem;
+    }
+    .product__img {
+      margin-top: 0;
+      margin-bottom: 0.56rem;
+    }
+    .product__io-description {
+      margin-left: 1.25rem;
+    }
+  }
+}
+
+@include bp(small) {
+  & {
+    font-size: 0.88rem;
+    margin-bottom: 3rem;
+  }
+  .product__specs {
+    margin-bottom: 2rem;
+  }
+  .product__header {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin-bottom: 1.25rem;
+  }
+  .product__desc {
+    line-height: 1.38rem;
+    margin-bottom: 2rem;
+  }
+
+  .product__img {
+    margin: 2rem auto;
+  }
+  .small-img {
+    margin-top: 0;
+    margin-bottom: 3rem;
+  }
+  .product__table {
+    line-height: 1.13rem;
+  }
+  .product__table-row {
+    column-gap: 1rem;
+    grid-template-columns: 8rem auto;
+  }
+  .product__disclaimer {
+    font-size: 0.75rem;
+  }
+  .product__io-description {
+    margin-left: 1rem;
+  }
+}
